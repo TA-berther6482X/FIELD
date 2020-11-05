@@ -1,0 +1,270 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  background-image: url("../../storage/images/cat-5233986_1280.jpg");
+  background-color: rgba(34, 49, 52, 0.6);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.frame {
+  min-height: 100vh;
+  padding-bottom: 20px;
+  border-radius: 3em;
+  background-color: rgba(34, 49, 52, 0.7);
+}
+
+.pagetitle {
+  font-size: 43px;
+  padding: 70px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pagetitle:before {
+  margin-right: 1em;
+}
+
+.pagetitle:after {
+  margin-left: 1em;
+}
+
+.pagetitle:before, .pagetitle:after {
+  border-top: 1px solid;
+  content: "";
+  width: 2em;
+  /* 線の長さ */
+}
+
+.areaparent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* toppage */
+#toppage {
+  min-height: 100vh;
+  padding: 100px;
+  color: aliceblue;
+  position: relative;
+}
+
+.h1group {
+  margin: 100px 0;
+}
+
+.h1group h1 {
+  font-size: 100px;
+  letter-spacing: 0.5em;
+}
+
+.h1group p {
+  font-size: 20px;
+}
+
+.h4group {
+  display: block;
+  float: right;
+  margin-bottom: 50px;
+}
+
+.h4group h4 {
+  line-height: 1.4em;
+  font-size: 40px;
+}
+
+.bottomp {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  right: 50%;
+}
+
+/* secondpage */
+#secondpage, #pagethree, #pagefour {
+  height: 100%;
+  padding: 10px 20px;
+  color: aliceblue;
+}
+
+.halftitle {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 70px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.halftitle:before {
+  margin-right: 1em;
+}
+
+.halftitle:after {
+  margin-left: 1em;
+}
+
+.halftitle:before, .halftitle:after {
+  border-top: 1px solid;
+  content: "";
+  width: 1em;
+  /* 線の長さ */
+}
+
+.halfleft {
+  width: 50%;
+  padding-right: 12px;
+}
+
+.halfright {
+  width: 50%;
+  padding-left: 12px;
+}
+
+.catavatar {
+  margin: 100px auto 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.catavatar img {
+  border: 4px solid whitesmoke;
+  border-radius: 100px;
+}
+
+/* pagethree */
+.subtitle {
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+.pageleftarea {
+  width: 60%;
+}
+
+.areapara {
+  font-size: 15px;
+}
+
+.outsidelink {
+  margin: 35px auto 60px;
+  text-align: center;
+  font-size: 30px;
+  color: rgba(72, 159, 209, 0.993);
+}
+
+.outsidelink a {
+  margin-right: 2px;
+}
+
+.fa-chalkboard-teacher, .fa-github {
+  padding-right: 5px;
+}
+
+.pagerightarea {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  width: 40%;
+  padding-top: 48px;
+  padding-left: 60px;
+}
+
+.displayvideo {
+  border-radius: 2em;
+}
+
+#index-btn-wrapper {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  position: fixed;
+  bottom: 0;
+  right: 60px;
+  display: none;
+}
+
+.index-btn {
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+  background-color: #788b94cb;
+  width: 40px;
+  padding: 6px 0;
+  margin: 0 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+  .pageleftarea, .pagerightarea, .halfleft, .halfright {
+    width: 100%;
+    padding-left: 0;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
+/* スマートフォン向けレイアウト */
+@media (max-width: 670px) {
+  #toppage {
+    padding: 10px;
+  }
+  .h1group h1 {
+    letter-spacing: 0.3em;
+  }
+  .areapara {
+    font-size: 20px;
+  }
+  .outsidelink a {
+    display: block;
+    margin: 5px;
+  }
+  .halfright .halftitle {
+    margin-top: 0;
+  }
+  .bottomp {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+  }
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    right: 0px;
+  }
+}
+/*# sourceMappingURL=app.css.map */

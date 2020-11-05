@@ -1,0 +1,52 @@
+/* タブレット向けレイアウト */
+@media (max-width: 1000px) {
+  .pageleftarea, .pagerightarea, .halfleft, .halfright {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+
+}
+
+/* スマートフォン向けレイアウト */
+@media (max-width: 670px) {
+  #toppage {
+    padding: 10px;
+  }
+  
+  .h1group h1 {
+    letter-spacing: 0.3em;
+  }
+  
+  .areapara {
+    font-size: 20px;
+  }
+
+  .outsidelink a {
+    display: block;
+    margin: 5px;
+  }
+
+  .halfright .halftitle {
+    margin-top: 0;
+  }
+
+  .bottomp {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+  }
+  
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    right: 0px;
+  }
+}
