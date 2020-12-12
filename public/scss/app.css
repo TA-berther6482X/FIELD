@@ -130,7 +130,7 @@ main {
   .outsidelink a {
     margin-right: 2px; }
 
-.fa-chalkboard-teacher, .fa-github {
+.fa-chalkboard-teacher, .fa-github, fa-twitter {
   padding-right: 5px; }
 
 .pagerightarea {
@@ -141,7 +141,6 @@ main {
 
 .displayvideo {
   border-radius: 2em;
-  position: relative;
   z-index: 10; }
 
 #index-btn-wrapper {
